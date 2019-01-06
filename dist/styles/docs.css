@@ -1,0 +1,183 @@
+#page-header {
+  width: auto;
+  height: 240px;
+  background: #0066DC;
+  background-image: url("https://res.cloudinary.com/prvnbist/image/upload/v1524202494/doodle_patterncss.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 40px 0;
+  position: relative; }
+  #page-header h3 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    position: relative;
+    padding-top: 15px; }
+    #page-header h3:after {
+      content: 'Style';
+      font-size: 14.4px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #fff;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      transform: translate(0, 0); }
+
+#menu-toggle {
+  cursor: pointer;
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  top: 45px;
+  transform: translate(, );
+  transition: 0.4s linear; }
+  #menu-toggle #menu-icon .bar {
+    width: 25px;
+    height: 2px;
+    background: #fff; }
+    #menu-toggle #menu-icon .bar:nth-child(2) {
+      margin: 5px 0; }
+  #menu-toggle.active #menu-icon {
+    transform: translate(7px, 1px); }
+  #menu-toggle.active .bar:first-child {
+    transform: rotate(45deg) translateY(10px); }
+  #menu-toggle.active .bar:nth-child(2) {
+    opacity: 0; }
+  #menu-toggle.active .bar:last-child {
+    transform: rotate(-45deg) translateY(-10px); }
+
+#sidebar {
+  width: 280px;
+  height: 100vh;
+  background: #f9fbfb;
+  box-shadow: 2px 0 30px -2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: fixed;
+  left: -280px;
+  transition: 0.4s linear; }
+  #sidebar.showSidebar {
+    left: 0; }
+  #sidebar #brand {
+    width: 100%;
+    height: 105px;
+    background: #0066DC;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    margin-bottom: 26px;
+    border: 4px solid #fff; }
+    #sidebar #brand a {
+      border-bottom: none; }
+  #sidebar #menu {
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    overflow-y: scroll; }
+    #sidebar #menu::-webkit-scrollbar {
+      width: 8px; }
+    #sidebar #menu::-webkit-scrollbar-thumb {
+      border-radius: 90px;
+      background: rgba(21, 42, 51, 0.3); }
+  #sidebar li span {
+    width: 100%;
+    height: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #152A33;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    line-height: 30px; }
+  #sidebar ul .menu {
+    padding: 10px 20px;
+    display: none; }
+    #sidebar ul .menu a {
+      font-size: 16px;
+      letter-spacing: 0.005em;
+      color: #5B657A; }
+  #sidebar ul .index {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #5B657A; }
+  #sidebar ul a {
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: none; }
+  #sidebar ul li:first-child {
+    margin-top: 0; }
+    #sidebar ul li:first-child span {
+      margin-top: 0; }
+  #sidebar ul li ul {
+    padding: 0;
+    border-left: 2px solid #5B657A; }
+    #sidebar ul li ul li {
+      margin: 20px 0; }
+    #sidebar ul li ul li:first-child {
+      margin-top: 0; }
+    #sidebar ul li ul li:last-child {
+      margin-bottom: 0; }
+
+.doc-wrapper {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden; }
+
+#sidebar {
+  z-index: 10; }
+
+#content {
+  width: calc(100vw - 60px);
+  max-width: 1180px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+  #content #docs {
+    width: 100%;
+    max-width: 740px; }
+  #content h3,
+  #content h5 {
+    color: #152A33; }
+  #content h5 {
+    font-size: 16px;
+    font-weight: 700;
+    grid-column: 1 / 4;
+    margin: 30px 0;
+    padding: 15px 0 15px 15px;
+    border-left: 2px solid #D0DAE6; }
+  #content p span {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 22.5px;
+    border-radius: 4px;
+    width: auto;
+    height: 25px;
+    background: #E8E8E8; }
+
+.gist .gist-meta a {
+  font-size: 12px; }
+
+@media screen and (max-width: 767px) {
+  .doc-wrapper {
+    grid-auto-flow: row;
+    grid-template-columns: 240px 1fr;
+    position: relative; }
+  #page-header {
+    width: 100%;
+    height: 180px;
+    padding: 20px; }
+    #page-header .wrapper {
+      width: 100vw; }
+      #page-header .wrapper #menu-toggle {
+        top: 20px;
+        left: 20px; }
+        #page-header .wrapper #menu-toggle.active {
+          left: 300px; }
+  #content {
+    width: 100%; }
+    #content #docs {
+      padding: 0 20px 20px 20px; } }

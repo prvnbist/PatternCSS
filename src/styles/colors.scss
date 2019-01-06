@@ -1,0 +1,63 @@
+@import './pattern_scss/utils/_variables';
+@import "./pattern_scss/utils/_mixins";
+
+.primary {
+    $bg: $primary $primary-light $primary-dark;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) .color {
+            background: nth($bg, $i);
+        }
+    }
+}
+
+.secondary {
+    $bg: $secondary $secondary-light $secondary-dark;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) .color {
+            background: nth($bg, $i);
+        }
+    }
+}
+
+.grays {
+    $bg: $white $light-grey $dark-grey;
+    .color {
+        border: 1px solid $dark-grey;
+        span {
+            color: $text;
+        }
+    }
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) .color {
+            background: nth($bg, $i);
+        }
+    }
+}
+
+.alerts {
+    $bg: $success $warning $danger;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) .color {
+            background: nth($bg, $i);
+        }
+    }
+}
+
+.color {
+    @include object(100%, 60px, null);
+    border-radius: 4px;
+    span {
+        text-align: left;
+        padding-left: 20px;
+        line-height: 60px;
+        color: #fff;
+    }
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: $medium;
+    color: rgba($text, 0.8);
+}

@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+	head
+		title PatternCSS
+		meta(name='description', content='A combination of Pattern Library & Design System.')
+		meta(name='keywords', content='library, pattern, user interface, framework, design system')
+		include pug_includes/_head
+	body
+		.doc-wrapper
+			include pug_includes/_sidebar
+			- var title = 'Colors'
+			include pug_includes/_header
+			#content
+				#docs
+					mixin color(cls,hex,variable)
+						.col(class=cls)
+							.color
+								span=hex
+							p= variable
+					h5 THEME COLORS
+					.row.span-4
+						+color("primary","#0066DC","$primary")
+						+color("primary","#5299EB","$primary-light")
+						+color("primary","#0056BA","$primary-dark")
+					.row.span-4
+						+color("secondary","#FF8484","$secondary")
+						+color("secondary","#F58C8C","$secondary-light")
+						+color("secondary","#E06363","$secondary-dark")
+					h5 GRAYSCALES
+					.row.span-4
+						+color("grays","#FFFFFF","$white")
+						+color("grays","#F6F7GB","$light-grey")
+						+color("grays","#D0DAE6","$dark-grey")
+					h5 ALERTS
+					.row.span-4
+						+color("alerts","#66C44F","$success")
+						+color("alerts","#FF7A37","$warning")
+						+color("alerts","#E62254","$danger")
+
+					

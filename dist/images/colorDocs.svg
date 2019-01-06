@@ -1,0 +1,23 @@
+<svg width="75" height="75" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>colors</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1158 -323)">
+<g id="colors">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-1158 323)" fill="#0066DC"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-1118 323)" fill="#FF8484"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-1158 363)" fill="#66C44F"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-1118 363)" fill="#5299EB"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 35 17.5C 35 27.165 27.165 35 17.5 35C 7.83502 35 0 27.165 0 17.5C 0 7.83502 7.83502 0 17.5 0C 27.165 0 35 7.83502 35 17.5Z"/>
+</defs>
+</svg>

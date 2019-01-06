@@ -1,0 +1,89 @@
+header {
+  height: 550px;
+  background: url("http://res.cloudinary.com/prvnbist/image/upload/v1522398098/patternBg.svg") no-repeat center, linear-gradient(283.76deg, #0066DC 6.02%, #5299EB 100%);
+  display: flex;
+  position: relative; }
+  header #github-stars {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center; }
+    header #github-stars .twitter-share-button {
+      margin-right: 20px;
+      padding: 6.5px 15px;
+      background: #00aced;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      line-height: 15px;
+      font-family: "HKG";
+      font-weight: 300;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); }
+
+#header-content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  #header-content p {
+    color: #FFF;
+    margin: 40px 0;
+    text-align: center;
+    line-height: 34px; }
+    #header-content p span {
+      padding-bottom: 4px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.7); }
+
+#header-cta {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px; }
+  #header-cta button a {
+    color: #FFF; }
+
+@media screen and (max-width: 567px) {
+  #header-content {
+    width: 90%; } }
+
+#section-title {
+  text-align: center;
+  font-size: 16px;
+  color: #d3d8eb;
+  margin: 40px 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: none; }
+
+main {
+  transform: translateY(-20px); }
+  main .col {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding-bottom: 60px;
+    border-radius: 4px;
+    box-shadow: 0 4px 40px -2px rgba(0, 0, 0, 0.2); }
+    main .col .thumb {
+      width: 100%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main .col .thumb a {
+        color: #fff; }
+      main .col .thumb p {
+        font-size: 48px;
+        margin-bottom: unset;
+        font-weight: 700; }
+        main .col .thumb p span {
+          font-size: 28px; }
+      main .col .thumb img {
+        transform: scale(0.8); }
+    main .col a {
+      text-align: center;
+      font-weight: 600; }

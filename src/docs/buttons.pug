@@ -1,0 +1,134 @@
+doctype html
+html(lang='en')
+    head
+        title PatternCSS
+        meta(name='description', content='A combination of Pattern Library & Design System.')
+        meta(name='keywords', content='library, pattern, user interface, framework, design system')
+        include pug_includes/_head
+    body
+        .doc-wrapper
+            include pug_includes/_sidebar
+            - var title = 'Buttons'
+            include pug_includes/_header
+            #content
+                #docs
+                    h5 BUTTON CLASSES
+                    p The #[span .btn] class is used to define an anchor tag as a button. All the anchor tags that has to be rendered as a button needs to have #[span .btn] class.
+                    h5 BUTTONS
+                    p Primary buttons can be used as Call To Action buttons. Thier roles are defined by what they represent. For ex. primary button will have a class name #[span primary] prefixed with #[span .is] so that would be #[span .is-primary]. Same goes for the other buttons.
+                    #lowerCase
+                        a(href="#" class='btn is-primary') Primary
+                        a(href="#" class='btn is-secondary') Secondary
+                        a(href="#" class='btn is-success') Success
+                        a(href="#" class='btn is-warning') Warning
+                        a(href="#" class='btn is-danger') Danger
+                        a(href="#" class='btn is-dark') Dark
+                        a(href="#" class='btn is-light') Light
+                    .code
+                        script(src="https://gist.github.com/prvnbist/41f948f4da4948bdc1c6cdb02c842140.js")
+                    h5 GHOST
+                    p Ghost buttons simply have class like #[span .is-ghost] followed by the role they represent. So a ghost class would be #[span .is-ghost-primary].
+                    #ghost
+                        a(href="#" class='btn is-ghost-primary') Primary
+                        a(href="#" class='btn is-ghost-secondary') Secondary
+                        a(href="#" class='btn is-ghost-success') Success
+                        a(href="#" class='btn is-ghost-warning') Warning
+                        a(href="#" class='btn is-ghost-danger') Danger
+                        a(href="#" class='btn is-ghost-dark') Dark
+                        a(href="#" class='btn is-ghost-light') Light
+                    .code
+                        script(src="https://gist.github.com/prvnbist/85c1f35194871cb353261edf79ff2707.js")
+                    h5 UPPERCASE
+                    #upperCase
+                        a(href="#" class='btn is-primary is-uppercase') Primary
+                        a(href="#" class='btn is-secondary is-uppercase') Secondary
+                        a(href="#" class='btn is-success is-uppercase') Success
+                        a(href="#" class='btn is-warning is-uppercase') Warning
+                        a(href="#" class='btn is-danger is-uppercase') Danger
+                        a(href="#" class='btn is-dark is-uppercase') Dark
+                        a(href="#" class='btn is-light is-uppercase') Light
+                    .code
+                        script(src="https://gist.github.com/prvnbist/84ad349d88df5977704f3fe77ab246f7.js")
+                    h5 GHOST UPPERCASE
+                    #ghostUpperCase
+                        a(href="#" class='btn is-ghost-primary is-uppercase') Primary
+                        a(href="#" class='btn is-ghost-secondary is-uppercase') Secondary
+                        a(href="#" class='btn is-ghost-success is-uppercase') Success
+                        a(href="#" class='btn is-ghost-warning is-uppercase') Warning
+                        a(href="#" class='btn is-ghost-danger is-uppercase') Danger
+                        a(href="#" class='btn is-ghost-dark is-uppercase') Dark
+                        a(href="#" class='btn is-ghost-light is-uppercase') Light
+                    .code
+                        script(src="https://gist.github.com/prvnbist/f849637a8b276f81de5f16cb36f8be7d.js")
+                    h5 LARGE BUTTONS
+                    p To make a button large just add the class #[span .is-large]
+                    #large
+                        a(href="#" class='btn is-primary is-large') Primary
+                        a(href="#" class='btn is-secondary is-large') Secondary
+                        a(href="#" class='btn is-success is-large') Success
+                        a(href="#" class='btn is-warning is-large') Warning
+                        a(href="#" class='btn is-danger is-large') Danger
+                        a(href="#" class='btn is-dark is-large') Dark
+                        a(href="#" class='btn is-light is-large') Light
+                    .code
+                        script(src="https://gist.github.com/prvnbist/761a158a96636a0551c4badf82b44936.js")
+                    h5 BUTTON GROUP
+                    p Grouping of buttons can  be done by using #[span .is-group] class.
+                    #group
+                        .btn-group
+                            a(href="#" class='btn is-primary is-group') Left
+                            a(href="#" class='btn is-primary is-group') Middle
+                            a(href="#" class='btn is-primary is-group') Right
+                        .btn-group
+                            a(href="#" class='btn is-secondary is-group') Left
+                            a(href="#" class='btn is-secondary is-group') Middle
+                            a(href="#" class='btn is-secondary is-group') Right
+                        .btn-group
+                            a(href="#" class='btn is-dark is-group') Left
+                            a(href="#" class='btn is-dark is-group') Middle
+                            a(href="#" class='btn is-dark is-group') Right
+                    .code
+                        script(src="https://gist.github.com/prvnbist/f38a5a2a0162bfecdd9a667ded70fe55.js")
+                    h5 INLINE ICONS
+                    p Icons can aligned either left or right by using #[span .left-inline-icon] & #[span .right-inline-icon] classes respectively.
+                    #inlineIcons
+                        a(href="#" class='btn is-primary left-inline-icon')
+                            i.fa.fa-instagram
+                            | Instagram
+                        a(href="#" class='btn is-primary right-inline-icon') Twitter
+                            i.fa.fa-twitter
+                    .code
+                        script(src="https://gist.github.com/prvnbist/2dfddf106465b3b8f5e08aad641fae3c.js")
+                    h5 ALERTS WITH ICONS
+                    #alerts
+                        a(href="#" class='btn is-success right-inline-icon') Success
+                            i.fa.fa-check-circle
+                        a(href="#" class='btn is-warning right-inline-icon') Warning
+                            i.fa.fa-exclamation-circle
+                        a(href="#" class='btn is-danger right-inline-icon') Danger
+                            i.fa.fa-exclamation-triangle
+                    h5 ROUNDED BUTTONS
+                    #rounded
+                        a(href="#" class='btn is-primary is-round') Primary
+                        a(href="#" class='btn is-secondary is-round') Secondary
+                        a(href="#" class='btn is-success is-round') Success
+                        a(href="#" class='btn is-warning is-round') Warning
+                        a(href="#" class='btn is-danger is-round') Danger
+                        a(href="#" class='btn is-dark is-round') Dark
+                        a(href="#" class='btn is-light is-round') Light
+                    .code
+                        script(src="https://gist.github.com/prvnbist/7c311f2338939d257d257c2eea69f40b.js")
+                    h5 LOADING
+                    #load
+                        a(href="#" class='btn is-primary is-loading') Primary
+                        a(href="#" class='btn is-secondary is-loading') Secondary
+                        a(href="#" class='btn is-success is-loading') Success
+                        a(href="#" class='btn is-warning is-loading') Warning
+                        a(href="#" class='btn is-danger is-loading') Danger
+                        a(href="#" class='btn is-dark is-loading') Dark
+                        a(href="#" class='btn is-light is-loading') Light
+                    .code
+                        script(src="https://gist.github.com/prvnbist/3500f30bda44ba638d32c5a858a920d3.js")
+                        
+                        
+                    

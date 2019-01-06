@@ -1,0 +1,26 @@
+@import './pattern_scss/utils/_variables';
+@import "./pattern_scss/utils/_mixins";
+
+#lowerCase,
+#ghost,
+#upperCase,
+#ghostUpperCase,
+#large,
+#inlineIcons,
+#alerts,
+#rounded,
+#load {
+    a {
+        margin: 0 10px 10px 0;
+    }
+}
+
+.code {
+    margin-top: 10px;
+    clear: both;
+}
+
+.btn-group {
+    float:left;
+    margin: 0 10px 10px 0;
+}

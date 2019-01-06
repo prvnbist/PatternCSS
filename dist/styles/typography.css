@@ -1,0 +1,51 @@
+#typeface {
+  color: #152A33; }
+  #typeface h1 {
+    margin-bottom: 30px; }
+  #typeface .col {
+    width: auto;
+    height: 126px;
+    min-width: 126px;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #152A33; }
+    #typeface .col > span {
+      font-size: 40px; }
+    #typeface .col .info {
+      display: flex;
+      justify-content: space-between; }
+    #typeface .col:nth-of-type(1) {
+      font-weight: 300; }
+    #typeface .col:nth-of-type(2) {
+      font-weight: 500; }
+    #typeface .col:nth-of-type(3) {
+      font-weight: 600; }
+    #typeface .col:nth-of-type(4) {
+      font-weight: 700; }
+    #typeface .col:nth-of-type(5) {
+      font-weight: 900; }
+
+#heirarchy {
+  color: #152A33; }
+  #heirarchy .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: #152A33; }
+    #heirarchy .col h1, #heirarchy .col h2, #heirarchy .col h3, #heirarchy .col h4, #heirarchy .col p {
+      text-align: left;
+      margin-bottom: 0; }
+
+@media screen and (max-width: 567px) {
+  #heirarchy .col {
+    display: block;
+    height: auto; }
+    #heirarchy .col h1, #heirarchy .col h2, #heirarchy .col h3, #heirarchy .col h4, #heirarchy .col p {
+      border-left: 2px solid #D0DAE6;
+      padding: 30px 20px;
+      margin-top: 20px; } }

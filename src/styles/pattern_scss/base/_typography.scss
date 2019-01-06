@@ -1,0 +1,57 @@
+@import "../utils/_variables";
+
+h1,h2,h3,h4,h5,p,a,span {
+    font-family: $font;
+}
+
+h1 { font-size: $font-base * 8; font-weight: $bold; }
+h2 { font-size: $font-base * 6; font-weight: $bold; }
+h3 { font-size: $font-base * 4; font-weight: $semi-bold; }
+h4 { font-size: $font-base * 3; font-weight: $medium; }
+h5 { font-size: $font-base * 2.25; font-weight: $regular; }
+p { font-size: $font-base * 2; font-weight: $regular; color: $text; line-height: 32px; margin-bottom: 30px;}
+a { font-size:$font-base * 2; font-weight: $light; text-decoration: none; color:$primary;}
+
+@media screen and (max-width:980px){
+    h1 {font-size:$font-base * 5;}
+    h2 {font-size:$font-base * 4;}
+    h3 {font-size:$font-base * 3;}
+    h4 {font-size:$font-base * 2.5;}
+}
+
+$url : "/fonts";
+@font-face {
+    font-family: $font;
+    src: url('#{$url}/hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('#{$url}/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: $bold;
+}
+
+@font-face {
+    font-family: $font;
+    src: url('#{$url}/hkgrotesk-semibold-webfont.woff2') format('woff2'),
+         url('#{$url}/hkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: $semi-bold;
+}
+
+@font-face {
+    font-family: $font;
+    src: url('#{$url}/hkgrotesk-medium-webfont.woff2') format('woff2'),
+         url('#{$url}/hkgrotesk-medium-webfont.woff') format('woff');
+    font-weight: $medium;
+}
+
+@font-face {
+    font-family: $font;
+    src: url('#{$url}/hkgrotesk-regular-webfont.woff2') format('woff2'),
+         url('#{$url}/hkgrotesk-regular-webfont.woff') format('woff');
+    font-weight: $regular;
+}
+
+@font-face {
+    font-family: $font;
+    src: url('#{$url}/hkgrotesk-light-webfont.woff2') format('woff2'),
+         url('#{$url}/hkgrotesk-light-webfont.woff') format('woff');
+    font-weight: $light;
+}
+

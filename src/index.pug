@@ -1,0 +1,38 @@
+-var url = 'https://patterncss.netlify.com/'
+doctype html  
+html(lang='en')  
+	head
+		title PatternCSS
+		meta(name='description', content='A combination of Pattern Library & Design System.')
+		meta(name='keywords', content='library, pattern, user interface, framework, design system')
+		include docs/pug_includes/_head
+		script(async defer src="https://buttons.github.io/buttons.js")
+	body
+		header
+			#header-content
+				#github-stars
+					a(class="twitter-share-button" href="https://twitter.com/intent/tweet?text=PatternCSS : A Pattern Library consisting of every UI components to build a consistent website. - &url=https://patterncss.netlify.com&via=prvnbist" target='_blank') Tweet
+					a(class="github-button" href="https://github.com/prvnbist/PatternCSS" data-size="large" data-show-count="true" aria-label="Star prvnbist/PatternCSS on GitHub") Star
+				img(src="https://res.cloudinary.com/prvnbist/image/upload/v1521124152/patterncsslogo.svg", alt="")
+				p A #[span Pattern Library] consisting of every #[span UI Components] to build a consistent website.
+				#header-cta
+					a(href="https://github.com/prvnbist/PatternCSS"  class='btn is-ghost is-white right-inline-icon') Github
+						i.fa.fa-github
+					a(href=url + "docs/colors.html" class='btn is-ghost is-white right-inline-icon') Docs
+						i.fa.fa-code
+		main.wrapper
+			.row
+				h4#section-title DOCUMENTATION
+				.row.span-4
+					.col
+						.thumb
+							a(href=url + "docs/buttons.html" class='btn is-primary') Buttons
+						a(href=url + "docs/buttons.html" class='docLink') Read the docs
+					.col
+						.thumb
+							p T#[span T]
+						a(href=url + "docs/typography.html" class='docLink') Read the docs
+					.col
+						.thumb
+							img(src="images/colorDocs.svg", alt="")
+						a(href=url + "docs/colors.html" class='docLink') Read the docs

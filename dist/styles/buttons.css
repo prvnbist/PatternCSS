@@ -1,0 +1,18 @@
+#lowerCase a,
+#ghost a,
+#upperCase a,
+#ghostUpperCase a,
+#large a,
+#inlineIcons a,
+#alerts a,
+#rounded a,
+#load a {
+  margin: 0 10px 10px 0; }
+
+.code {
+  margin-top: 10px;
+  clear: both; }
+
+.btn-group {
+  float: left;
+  margin: 0 10px 10px 0; }

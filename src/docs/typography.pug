@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+    head
+        title PatternCSS
+        meta(name='description', content='A combination of Pattern Library & Design System.')
+        meta(name='keywords', content='library, pattern, user interface, framework, design system')
+        include pug_includes/_head
+    body
+        .doc-wrapper
+            include pug_includes/_sidebar
+            - var title = 'Typography'
+            include pug_includes/_header
+            #content
+                #docs
+                    h5 TYPEFACE
+                    #typeface
+                        mixin text(weightName,weightSize)
+                            .col
+                                span Aa
+                                .info
+                                    span= weightName
+                                    span= weightSize
+                        h1 HK GROTESK
+                        p This component provides standard typographic styles for the platform. The font HK Grotesk is made by 
+                            a(href="https://hanken.co/product/hk-grotesk/") Hanken Co.
+                        .row.span-5.t-span-4.m-span-6.s-span-6.xs-span-6
+                            +text("Light","300")
+                            +text("Regular","500")
+                            +text("Medium","600")
+                            +text("Semibold","700")
+                            +text("Bold","900")
+                    h5 HEIRARCHY
+                    #heirarchy
+                        .row.span-12
+                            .col
+                                span H1(BOLD)
+                                h1 Heading H1(64px)
+                            .col
+                                span H2(BOLD)
+                                h2 Heading H2(48px)
+                            .col
+                                span H3(SEMI-BOLD)
+                                h3 Heading H3(32px)
+                            .col
+                                span H4(MEDIUM)
+                                h4 Heading H4(24px)
+                            .col
+                                span P(REGULAR)
+                                p Paragraph P(18px)
+
+

@@ -1,0 +1,54 @@
+@import "../../pattern_scss/utils/_variables";
+@import "../../pattern_scss/utils/_mixins";
+
+#page-header {
+    // @include object(auto,160px,#F7F7F7);
+    @include object(auto,240px,$primary);
+    background-image: url('https://res.cloudinary.com/prvnbist/image/upload/v1524202494/doodle_patterncss.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x; 
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 40px 0;
+    position: relative;
+    h3 {
+        color:#fff;
+        font-size:$font-base * 5;
+        font-weight: $light;
+        position: relative;
+        padding-top: 15px;
+        &:after {
+            content:'Style';
+            font-size: $font-base * 1.8;
+            text-transform: uppercase;
+            font-weight: $bold;
+            color: #fff;
+            @include position(-5px,null,null,0,0,0);
+        }
+    }
+}
+
+#menu-toggle {
+	cursor: pointer;
+	@include object(25px,18px,null);
+	@include position(45px,null,null,null,null,null);
+	transition:0.4s linear;
+	#menu-icon {
+		.bar {
+			@include object(25px,2px,#fff);
+			&:nth-child(2){
+				margin: 5px 0;
+			}
+		}
+    }
+    
+	&.active {
+		#menu-icon {
+			transform:translate(7px,1px);
+		}
+		.bar:first-child{transform: rotate(45deg) translateY(10px);}
+		.bar:nth-child(2){opacity: 0;}
+		.bar:last-child{transform: rotate(-45deg) translateY(-10px);}
+	}
+}

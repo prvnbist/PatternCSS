@@ -1,0 +1,111 @@
+@import './pattern_scss/utils/_variables';
+@import "./pattern_scss/utils/_mixins";
+
+header {
+    height: 550px;
+    background: url('http://res.cloudinary.com/prvnbist/image/upload/v1522398098/patternBg.svg') no-repeat center, linear-gradient(283.76deg, $primary 6.02%, $primary-light 100%);
+    display: flex;
+    position: relative;
+    #github-stars {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        .twitter-share-button {
+            margin-right: 20px;
+            padding: 6.5px 15px;
+            background: #00aced;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            line-height: 15px;
+            font-family: $font;
+            font-weight: $light;
+            box-shadow: 0 2px 3px rgba(#000, 0.1);
+        }
+    }
+}
+
+#header-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        color: $white;
+        margin: 40px 0;
+        text-align: center;
+        line-height: 34px;
+        span {
+            padding-bottom: 4px;
+            ;
+            border-bottom: 2px solid rgba(#fff, 0.7);
+        }
+    }
+}
+
+#header-cta {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    button a {
+        color: $white;
+    }
+}
+
+@media screen and (max-width:567px) {
+    #header-content {
+        width: 90%;
+    }
+}
+
+#section-title {
+    text-align: center;
+    font-size: 16px;
+    color: darken($light-grey, 10%);
+    margin: 40px 0;
+    font-weight: $medium;
+    letter-spacing: 0.5px;
+    display: none;
+}
+
+main {
+    transform: translateY(-20px);
+    .col {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding-bottom: 60px;
+        border-radius: 4px;
+        box-shadow: 0 4px 40px -2px rgba(#000,0.2);
+        .thumb {
+            @include object(100%,180px,null);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                color:#fff;
+            }
+            p {
+                font-size: 48px;
+                margin-bottom: unset;
+                font-weight: $semi-bold;
+                span {
+                    font-size:28px;
+                }
+            }
+            img {
+                transform: scale(0.8);
+            }
+        }
+        a {
+            text-align: center;
+            font-weight: $medium;
+        }
+    }
+}

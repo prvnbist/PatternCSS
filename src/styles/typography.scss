@@ -1,0 +1,69 @@
+@import './pattern_scss/utils/_variables';
+@import "./pattern_scss/utils/_mixins";
+#typeface {
+	color: $text;
+	h1 {
+		margin-bottom: 30px;
+	}
+	.col {
+		@include object(auto, 126px, null);
+		min-width: 126px;
+		border: 1.5px solid #F2F2F2;
+		border-radius: 4px;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		color: $text;
+		&>span {
+			font-size: 40px;
+		}
+		.info {
+			display: flex;
+			justify-content: space-between;
+		}
+		$list: $light $regular $medium $semi-bold $bold;
+		@for $i from 1 through 5 {
+			&:nth-of-type(#{$i}) {
+				font-weight: nth($list, $i);
+			}
+		}
+	}
+}
+
+#heirarchy {
+	color: $text;
+	.col {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 70px;
+		color: $text;
+		h1,
+		h2,
+		h3,
+		h4,
+		p {
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-width:567px) {
+	#heirarchy {
+		.col {
+			display: block;
+			height: auto;
+			h1,
+			h2,
+			h3,
+			h4,
+			p {
+				border-left: 2px solid $dark-grey;
+				padding: 30px 20px;
+				margin-top: 20px;
+			}
+		}
+	}
+}
